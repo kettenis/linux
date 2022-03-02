@@ -117,6 +117,7 @@ static struct spi_device_id spihid_apple_of_id[] = {
 	{ "spi-hid-transport", 0 },
 	{}
 };
+MODULE_DEVICE_TABLE(spi, spihid_apple_of_id);
 
 static struct spi_driver spihid_apple_of_driver = {
 	.driver = {
