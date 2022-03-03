@@ -289,20 +289,6 @@
 		ranges;
 		nonposted-mmio;
 
-		clk_ecluster: clock-controller@210e20000 {
-			compatible = "apple,t8103-cluster-clk", "apple,cluster-clk";
-			#clock-cells = <0>;
-			reg = <0x2 0x10e20000 0x0 0x4000>;
-			operating-points-v2 = <&ecluster_opp>;
-		};
-
-		clk_pcluster: clock-controller@211e20000 {
-			compatible = "apple,t8103-cluster-clk", "apple,cluster-clk";
-			#clock-cells = <0>;
-			reg = <0x2 0x11e20000 0x0 0x4000>;
-			operating-points-v2 = <&pcluster_opp>;
-		};
-
 		cpufreq_hw: cpufreq@210e00000 {
 			compatible = "apple,t8103-cluster-cpufreq", "apple,cluster-cpufreq";
 			reg = <0x2 0x10e20000 0 0x1000>,
