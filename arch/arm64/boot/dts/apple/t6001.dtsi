@@ -585,7 +585,7 @@
 		};
 
 		pinctrl_ap: pinctrl@39b028000 {
-			compatible = "apple,t8103-pinctrl", "apple,pinctrl";
+			compatible = "apple,t6000-pinctrl", "apple,pinctrl";
 			reg = <0x3 0x9b028000 0x0 0x4000>;
 
 			interrupt-parent = <&aic>;
